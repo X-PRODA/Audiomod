@@ -13,7 +13,7 @@ reco = open("reco.txt", "r")
 
 def silence_based_conversion(path): 
   song = AudioSegment.from_wav(path) 
-  fh = open("recognized.txt", "w+") 
+  fh = open("reco.txt", "w+") 
   chunks = split_on_silence(song,  
     min_silence_len = 500,  
     silence_thresh = -16
